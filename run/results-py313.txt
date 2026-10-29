@@ -1,0 +1,31 @@
+### cursed_as_published.py
+  File "/workspace/handshake-missions/top15/packs/evals3/run/cursed_as_published.py", line 23
+    builtins.print = lambda *a, **k: sys.stdout.write(repr(eval(" ".join(map(str, a)))) + "
+                                                                                          ^
+SyntaxError: unterminated string literal (detected at line 23)
+exit=1
+### cursed_repaired.py
+3.141592653589793
+24
+9
+Traceback (most recent call last):
+  File "/workspace/handshake-missions/top15/packs/evals3/run/cursed_repaired.py", line 62, in <module>
+    print("____")             # unknown name -> 4 (four underscores)
+  File "/workspace/handshake-missions/top15/packs/evals3/run/cursed_repaired.py", line 23, in <lambda>
+    builtins.print = lambda *a, **k: sys.stdout.write(repr(eval(" ".join(map(str, a)))) + "\n")
+  File "<string>", line 1, in <module>
+NameError: name '____' is not defined
+exit=1
+3.141592653589793
+24
+938
+42
+3.141592653589793
+24
+19
+42
+3.141592653589793
+24
+38
+42
+exit=0
